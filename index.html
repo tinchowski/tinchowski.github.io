@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="slides.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <title>Campo Mendoza</title>
+</head>
+<body>
+    <div class="sticky">
+            <!-- Barra de navegación -->
+        <nav class="menu-nav">
+            <ol>
+                <li><a href="#quienes_somos">QUIENES SOMOS</a></li>
+                <li><a href="#bodegas">NUESTRA BODEGA</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="#">PREMIOS Y RECONOCIMIENTOS</a></li>
+                <li><a href="#">NOTICIAS</a></li>
+                <li><a href="#contacto">VISITAS</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="laestancia">
+        <img src="img\provincia-mendoza-jumbotron.jpg" class="imagen-recortada" alt="la estancia" width=100% height=10%>
+        <div class="nombre_bodega">Bodegas Campo Mendoza</div>
+        <div class="barra_negra"></div>
+    </div>
+
+    <section id="quienes_somos">
+        <h2>QUIENES SOMOS</h2> 
+        <div class="cont_quienes">
+            <div class="campo-slideshow">
+                <div class="image_x">
+                    <img src="img\images (2).jpg" alt="Mountain Top">
+                </div>
+            
+                <div class="image_x">
+                    <img src="img\images (1).jpg" alt="Palm Trees">
+                </div>
+            
+                <div class="image_x">
+                    <img src="img\images.jpg" alt="Neon Sign">
+                </div>
+            </div>
+        
+            <div class="descr">
+                <!-- <p>En Campo Mendoza disfrutamos cada etapa del proceso de la elaboración de vino. La experiencia vinitícola de nuestra finca se extiende hasta los doscientos años de antigüedad, con la primera llegada de inmigrantes españoles a suelo mendocino. Aquí, los verdes viñedos se funden con el paisaje desértico y montañoso de Los Andes.</p>
+                <br><p>Ahora abrimos nuestras puertas al público, compartiendo nuestra pasión y dedicación, ofreciendo degustaciones de nuestros vinos, acompañados de platos elaborados de alta cocina.</p>
+                <br><p>Nuestro compromiso y deseo es que usted sienta al visitar nuestros viñedos una experiencia igual de placentera, un atisbo de lo que nosotros sentimos con nuestra tradición.</p>
+
+                <br><p>Somos Bodegas Campo Mendoza.<br>
+                    Somos el fruto de nuestra tierra y del trabajo de nuestra gente. <br>
+                    Somos la bodega número uno del país.</p> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis tempora ut excepturi at ipsum magni nam ab cumque, rerum dicta quod error ipsam nisi corporis non eveniet et consequuntur?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bodegas">
+        <h3>NUESTRAS BODEGAS</h3>
+        <div class="cont_bodegas">
+            <div class="bodega-slideshow">
+                <div class="image_y">
+                    <img src="img\las-mas-destacadas-bodegas-en-el-valle-de-uco_162_202102111802480.png" alt="">
+                </div>
+                <div class="image_y">
+                    <img src="img\bodega-grupomotiva.jpg" alt="">
+                </div>
+            </div>
+            <div class="descr_bodega">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis sit, eius quo ex dignissimos consequuntur odio rerum natus, nemo eligendi voluptate eum rem unde ab minima recusandae nisi earum?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto">
+        <div class="cont_contacto">
+            <h4>Ven a conocernos</h4>
+            <p class="sub_contacto">Visitas guiadas. Comida y degustaciones de vino incluídas.<a href=".\gastronomia\gastro.html">Ver opciones gastronómicas.</a></p> 
+            <div class="form_contacto">
+                <form action="Link" method="POST" target="_blank"></form>
+                    <label for="name">Nombre: </label>
+                    <input size="30" type="text" name="name" id="name" maxlength="50">
+                    <label for="apellido">Apellido: </label>
+                    <input size="30" type="text" name="name" id="name">
+                    <label for="date">Ingrese fecha de nacimiento: </label>
+                    <input type="date" name="date" id="date">
+                    <label for="email">Correo Electrónico: </label>
+                    <input size="30" type="email" name="email" id="email">
+                    <label for="news">¿Desea suscribirse al newsletter?</label>
+                    <input type="checkbox" name="news" id="news">
+                    <input type="submit" id="Boton" value="Enviar">
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53609.022228484464!2d-68.89971900652304!3d-32.88325636537007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1712342173535!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+    </section>
+    <script src="slides.js"></script>
+
+<footer>Bodegas Campo Mendoza. Provincia de Mendoza, Región de Cuyo, República Argentina. <br> Todos los derechos reservados. 2024.</footer>
+</body>
+
+</html>
