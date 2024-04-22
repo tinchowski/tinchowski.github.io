@@ -1,45 +1,50 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 .cont_quienes {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  max-width: 90%;
+  flex-wrap: wrap;
+  height: 50vh;
+  margin-bottom: 25em;
+  margin-top: 5em;
 }
 
 .cont_quienes .descr{
   width: 50%;
+  font-size: 1.5em;
   color: white;
-  text-align: center;
-  margin: 1em;}
+  margin-left: 2.5em;
+}
 
-.cont_quienes .campo-slideshow {margin: 5em; width: 70%; max-height: 80vh;}
+
+.cont_quienes .campo-slideshow {width: 70vh; max-height: 80vh;   margin-left: 9em;}
 
 
 .cont_bodegas {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  max-width: 90%;
+  flex-wrap: wrap;
+  height: 50vh;
+  margin-bottom: 25em;
+  margin-top: 5em;
 }
 
 .cont_bodegas .descr_bodega {
   width: 50%;
   color: white;
-  text-align: center;
-  margin: 1em;}
+  margin-left: 2.5em;
+  font-size: 1.5em;
+}
 
-.cont_bodegas .bodega-slideshow {margin: 5em; width: 70%; max-height: 80vh;}
+.titulo_bodegas {
+  flex-wrap: nowrap;
+  }
+
+.cont_bodegas .bodega-slideshow {width: 70vh; max-height: 80vh;   margin-left: 9em;}
 
 img {
   width: 100%;
-}
+ }
 
 .fade {
   animation-name: fade;
