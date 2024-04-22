@@ -16,7 +16,9 @@
     margin: 0 auto;
     row-gap: 1em;
     column-gap: 0.5em;
-    max-width: 70%;
+    max-width: 55em;
+    padding-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 
@@ -27,7 +29,7 @@ h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 .cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
 .cont_contacto .mapa {grid-column: 2; grid-row: 3;}
 
-.form_contacto {position: relative; left: 10%;}
+.form_contacto {position: relative; left: 5%;}
 
 
 body {background-color: rgb(29, 29, 29)}
@@ -35,18 +37,27 @@ body {background-color: rgb(29, 29, 29)}
 p {font-size: 1em;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'DM Sans';
 }
 
-h1,h2,h3,h4 {font-size: 1.5em;
+h1,h3,h4 {font-size: 1.5em;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
 }
+
+h2 {font-size: 2.5em;
+    text-align: center;
+    font-family: "Playfair Display", cursive;
+    color: bisque;
+    letter-spacing: 0.10em;
+    }
 
 
 footer {color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 .laestancia {
@@ -55,7 +66,7 @@ footer {color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
     margin: 0em;
-    margin-bottom: 5em;
+    margin-bottom: 25em;
     padding: 0em;}
 
 .idioma {position: absolute;

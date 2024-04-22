@@ -33,3 +33,14 @@ function displayImages_y() {
   images_y[index_y-1].style.display = "block";
   setTimeout(displayImages_y, 4000); 
 }
+
+
+
+// control de cantidad de invitados
+cant_personas.oninput = function () {
+  if (this.value.length > 2) {
+      this.value = this.value.slice(0,2);
+      alert('El máximo de personas es 10.')
+  }
+}
+
