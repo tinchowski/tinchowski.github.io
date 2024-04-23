@@ -8,15 +8,23 @@
     text-align: center;
 }
 
+.laestancia {
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    }
+
+
 .cont_contacto {display: grid;
     grid-template-columns: 1fr 1fr; 
-    max-width: 80%;
-    border: 0.1em; 
+    max-width: 65%;
+    border: 0.1em;
     border-style: ridge;
     margin: 0 auto;
     row-gap: 1em;
+    /*height: 50vh;*/
     column-gap: 0.5em;
-    max-width: 55em;
     padding-bottom: 1em;
     margin-bottom: 5em;
 }
@@ -28,7 +36,6 @@ h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 
 .cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
 .cont_contacto .mapa {grid-column: 2; grid-row: 3;}
-
 .form_contacto {position: relative; left: 5%;}
 
 
@@ -40,7 +47,7 @@ p {font-size: 1em;
     font-family: 'DM Sans';
 }
 
-h1,h3,h4 {font-size: 1.5em;
+h1,h3 {font-size: 1.5em;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
 }
@@ -52,22 +59,52 @@ h2 {font-size: 2.5em;
     letter-spacing: 0.10em;
     }
 
+h4 {font-size: 2.3em;
+    text-align: center;
+    font-family: "Playfair Display", cursive;
+    color: bisque;}
+
+
+.titulo_bodegas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    -ms-transform: translateY(+100%);
+    transform: translateY(+100%);}
+
+.titulo_bodegas #uv_l {
+        float:left;
+        position: relative;
+        max-width: 5%;
+        max-height: 5%;
+      }
+      
+.titulo_bodegas #uv_r {
+    float: right;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+}
+
+
+.titulo_quienes {position: relative;
+        -ms-transform: translateY(+150%);
+        transform: translateY(+150%);}
+
+.titulo_gastro {position: relative;
+    -ms-transform: translateY(+150%);
+    transform: translateY(+150%);}
+
 
 footer {color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 1em;
 }
 
-.laestancia {
-    display: flex;
-    position:relative;
-    justify-content: center;
-    align-items: center;
-    margin: 0em;
-    margin-bottom: 25em;
-    padding: 0em;}
 
 .idioma {position: absolute;
     top: 0%;
@@ -95,7 +132,7 @@ label{
     display: block;
     font-size: 1em;
     color: bisque;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family:'DM Sans';
     margin: 1em;
     text-align: left;
     justify-content: center;
@@ -165,6 +202,7 @@ a:link {
         text-align: center;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
     }
+
     
     
     footer {color: rgb(255, 255, 255);
