@@ -34,6 +34,25 @@ function displayImages_y() {
   setTimeout(displayImages_y, 4000); 
 }
 
+// Segunda función para elementos con la clase "image_z"
+let index_z = 0;
+displayImages_z();
+
+function displayImages_z() {
+  let i;
+  const images_z = document.getElementsByClassName("image_z");
+  for (i = 0; i < images_z.length; i++) {
+    images_z[i].style.display = "none";
+  }
+  index_z++;
+  if (index_z > images_z.length) {
+    index_z = 1;
+  }
+  images_z[index_z-1].style.display = "block";
+  setTimeout(displayImages_z, 4000); 
+}
+
+
 
 
 // control de cantidad de invitados
