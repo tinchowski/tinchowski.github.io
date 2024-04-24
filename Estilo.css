@@ -18,15 +18,13 @@
 
 .cont_contacto {display: grid;
     grid-template-columns: 1fr 1fr; 
-    max-width: 65%;
+    max-width: 50%;
     border: 0.1em;
     border-style: ridge;
     margin: 0 auto;
-    row-gap: 1em;
-    /*height: 50vh;*/
+    row-gap: 0.1em;
     column-gap: 0.5em;
-    padding-bottom: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 
@@ -39,7 +37,8 @@ h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 .form_contacto {position: relative; left: 5%;}
 
 
-body {background-color: rgb(29, 29, 29)}
+body {background: rgb(37,37,37);
+    background: radial-gradient(circle, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 100%);}
 
 p {font-size: 1em;
     text-align: center;
@@ -65,6 +64,7 @@ h4 {font-size: 2.3em;
     color: bisque;}
 
 
+
 .titulo_bodegas {
     display: flex;
     flex-direction: row;
@@ -74,14 +74,14 @@ h4 {font-size: 2.3em;
     -ms-transform: translateY(+100%);
     transform: translateY(+100%);}
 
-.titulo_bodegas #uv_l {
+.titulo_bodegas .uv_l {
         float:left;
         position: relative;
         max-width: 5%;
         max-height: 5%;
       }
       
-.titulo_bodegas #uv_r {
+.titulo_bodegas .uv_r {
     float: right;
     position: relative;
     max-width: 5%;
