@@ -37,14 +37,14 @@
     -ms-transform: translateY(+100%);
     transform: translateY(+100%);}
 
-.titulo_quienes #uv_l {
+.titulo_quienes .uv_l {
         float:left;
         position: relative;
         max-width: 5%;
         max-height: 5%;
       }
       
-.titulo_quienes #uv_r {
+.titulo_quienes .uv_r {
     float: right;
     position: relative;
     max-width: 5%;
@@ -115,14 +115,14 @@
       -ms-transform: translateY(+100%);
       transform: translateY(+100%);}
   
-  .titulo_gastro #uv_l {
+  .titulo_gastro .uv_l {
           float:left;
           position: relative;
           max-width: 5%;
           max-height: 5%;
         }
         
-  .titulo_gastro #uv_r {
+  .titulo_gastro .uv_r {
       float: right;
       position: relative;
       max-width: 5%;
