@@ -13,7 +13,7 @@
     position:relative;
     justify-content: center;
     align-items: center;
-    }
+}
 
 
 .cont_contacto {display: grid;
@@ -57,12 +57,13 @@ h2 {font-size: 2.5em;
     font-family: "Playfair Display", cursive;
     color: bisque;
     letter-spacing: 0.10em;
-    }
+}
 
 h4 {font-size: 2.3em;
     text-align: center;
     font-family: "Playfair Display", cursive;
-    color: bisque;}
+    color: bisque;
+}
 
 
 .titulo_bodegas {
@@ -72,15 +73,16 @@ h4 {font-size: 2.3em;
     justify-content: center;
     position: relative;
     -ms-transform: translateY(+100%);
-    transform: translateY(+100%);}
+    transform: translateY(+100%);
+}
 
 .titulo_bodegas #uv_l {
-        float:left;
-        position: relative;
-        max-width: 5%;
-        max-height: 5%;
-      }
-      
+    float:left;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+    }
+    
 .titulo_bodegas #uv_r {
     float: right;
     position: relative;
@@ -90,12 +92,13 @@ h4 {font-size: 2.3em;
 
 
 .titulo_quienes {position: relative;
-        -ms-transform: translateY(+150%);
-        transform: translateY(+150%);}
+    -ms-transform: translateY(+150%);
+    transform: translateY(+150%);}
 
 .titulo_gastro {position: relative;
     -ms-transform: translateY(+150%);
-    transform: translateY(+150%);}
+    transform: translateY(+150%);
+}
 
 
 footer {color: rgb(255, 255, 255);
@@ -124,7 +127,7 @@ footer {color: rgb(255, 255, 255);
     font-size: 5em;
     color: white;
     position: absolute;
-  }
+}
 
 footer {text-align: center;}
 
@@ -150,111 +153,283 @@ input {display:block;
 
 
 a {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: small;}
+    font-size: small;
+}
 
 /* creo animaciones */
 input[type=submit]:hover {background-color: rgb(238, 211, 60);}
 
 /* estilos links */
 a:link {
-    color: goldenrod;
-  }
-  a:visited {color: bisque}
-  
-  /* mouse over link */
-  a:hover {
-    color: white;
-  }
+color: goldenrod;
+}
+a:visited {color: bisque}
+
+/* mouse over link */
+a:hover {
+color: white;
+}
 
 
-@media all and (min-width: 600px) and (max-width: 1023px) {
 
-    .textos {
-        display: flex;
-        margin: 2em 4em 2em 4em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    
-    .cont_contacto {display: grid;
-        grid-template-columns: 1fr 1fr; 
-        max-width: 80%;
-        border: 0.1em; 
-        border-style: ridge;
-        margin: 0 auto;
-        row-gap: 1em;
-        column-gap: 0.5em;
-        max-width: 70%;
-    }
-    
-    
-    h4 {text-align: center; grid-row: 1; grid-column: span 2;}
-    
-    .sub_contacto {text-align: center; grid-row: 2; grid-column: span 2;}
-    
-    .cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
-    .cont_contacto .mapa {grid-column: 2; grid-row: 3;}
-    
-    .form_contacto {position: relative; left: 10%;}
-    
-    
-    h1,h2,h3,h4 {font-size: 1em;
-        text-align: center;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
+/* MOBILE */
+
+@media all and (max-width: 576px) {
+
+    * {
+    box-sizing: border-box;
     }
 
-    
-    
-    footer {color: rgb(255, 255, 255);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        justify-content: center;
+    p {font-size: 1em;
+        color: rgb(255, 255, 255);
+        font-family: 'DM Sans';
     }
 
-    .imagen-recortada{float: center;}
-    
+    .menu {
+    margin: 1em auto;
+    }
+
+
+    div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1em;
+    justify-content: center;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    }
+
+
+    .menu-nav ol {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center; /* Alinea los elementos en el centro horizontal */
+    padding: 0.5em;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: large;
+    }
+
+    .menu-nav ol li {
+    margin-right: 20px; /* Ajusta el espacio entre los elementos si es necesario */
+    }
+
+    .menu-nav ol li a {
+    text-decoration: none;
+    }
+
+
     .laestancia {
-        display: flex;
-        position:relative;
-        justify-content: center;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    }
+
+    h1,h3 {font-size: 1em;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
+    }
+
+    h2 {font-size: 1.5em;
+    text-align: center;
+    font-family: "Playfair Display", cursive;
+    color: bisque;
+    letter-spacing: 0.10em;
+    }
+
+    h4 {font-size: 1.7em;
+    text-align: center;
+    font-family: "Playfair Display", cursive;
+    color: bisque;}
+
+
+    .titulo_bodegas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;}
+
+    .titulo_bodegas #uv_l {
+    float:left;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+    }
+
+    .titulo_bodegas #uv_r {
+    float: right;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+    }
+
+
+    .titulo_gastro {display: flex;
+        flex-direction: row;
         align-items: center;
-        margin: 0em;
-        margin-top: 5em;
-        margin-bottom: 5em;
-        padding: 0em;}
-    
-    
+        justify-content: center;
+        position: relative;}
+
+
+    footer {color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    }
+
+
+    /* nombre bodega */
     .nombre_bodega {position: relative;
-        font-family: "Freehand", cursive;
-        font-weight: 300;
-        font-style: normal;
-        display: flex;
-        font-size: 5em;
-        color: white;
-        position: absolute;
-      }
-    
-    footer {text-align: center;}
-    
-    label{
-        display: block;
-        font-size: 1em;
-        color: bisque;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        margin: 1em;
-        text-align: left;
-        justify-content: center;
+    font-family: "Freehand", cursive;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    font-size: 2.3em;
+    color: white;
+    position: absolute;
     }
-    
-    #Boton {color: black}
-    
-    input {display:block;
-        font-size: 1em;
-        color: black;
-        margin: 1em;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        justify-content: center;
+
+
+    .titulo_quienes {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     }
-    
+
+    .cont_quienes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    .cont_quienes .descr {
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    }
+
+    .cont_quienes .campo-slideshow {
+    max-width: 100%;
+    }
+
+    .titulo_quienes {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    }
+
+    .titulo_quienes #uv_l {
+    float:left;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+    }
+
+    .titulo_quienes #uv_r {
+    float: right;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+    }
+
+
+
+    .cont_bodegas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    .cont_bodegas .descr_bodega {
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    }
+
+
+    .cont_bodegas .bodega-slideshow {max-width: 100%;}
+
+
+    .cont_gastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    .cont_gastro .descr_gastro {
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    }
+
+
+    .cont_gastro .gastro-slideshow {max-width: 100%;}
+
+
+    .titulo_gastro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    -ms-transform: translateY(+100%);
+    transform: translateY(+100%);}
+
+    .titulo_gastro #uv_l {
+        float:left;
+        position: relative;
+        max-width: 5%;
+        max-height: 5%;
+        }
+        
+    .titulo_gastro #uv_r {
+    float: right;
+    position: relative;
+    max-width: 5%;
+    max-height: 5%;
+    }
+
+
+
+    .cont_contacto {display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    max-width: 100%;
+    border: 0.1em;
+    border-style: ridge;
+    row-gap: .5em;
+    padding-bottom: .1em;
+    margin-bottom: 2.5em;
+    }
+
+
+
+    h4 {text-align: center; grid-row: 1;}
+
+    .sub_contacto {text-align: center; grid-row: 2;}
+
+    .cont_contacto .form_contacto {grid-row: 3;}
+    .cont_contacto .mapa {grid-row: 4;display: none;}
+    .form_contacto {position: relative; left: 5%;}
 
 
 }
