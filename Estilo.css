@@ -165,7 +165,6 @@ a:hover {
 color: white;
 }
 
- 
   .cont_quienes {
     display: flex;
     flex-wrap: wrap;
@@ -292,7 +291,12 @@ color: white;
     }
   
 
- 
+  
+    img {
+      width: 100%;
+     }
+
+    
   
 /* SACADO DE W3 SCHOOLS */
 /*IMPORTANTE */
@@ -371,12 +375,8 @@ color: white;
 /* MOBILE */
 @media all and (max-width: 576px) {
   
-  
 
-  p {font-size: 1em;
-    color: rgb(255, 255, 255);
-    font-family: 'DM Sans';
-}
+p {font-size: 1em;}
 
 .menu {
 margin: 1em auto;
@@ -387,11 +387,9 @@ div.sticky {
 position: -webkit-sticky;
 position: sticky;
 top: 0;
-background-color: rgba(255, 255, 255, 0.3);
 font-size: 1em;
 justify-content: center;
 width: 100%;
-z-index: 99;
 margin: 0;
 padding: 0;
 }
@@ -404,16 +402,7 @@ padding: 0;
 justify-content: center; /* Alinea los elementos en el centro horizontal */
 padding: 0.5em;
 margin: 0;
-background-color: rgba(0, 0, 0, 0.8);
 font-size: large;
-}
-
-.menu-nav ol li {
-margin-right: 20px; /* Ajusta el espacio entre los elementos si es necesario */
-}
-
-.menu-nav ol li a {
-text-decoration: none;
 }
 
 
@@ -425,21 +414,14 @@ align-items: center;
 }
 
 h1,h3 {font-size: 1em;
-text-align: center;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
 }
 
 h2 {font-size: 1.5em;
 text-align: center;
-font-family: "Playfair Display", cursive;
-color: bisque;
-letter-spacing: 0.10em;
 }
 
 h4 {font-size: 1.7em;
-text-align: center;
-font-family: "Playfair Display", cursive;
-color: bisque;}
+text-align: center;}
 
 
 .titulo_bodegas {
@@ -475,8 +457,7 @@ max-height: 5%;
     transform: translateY(0%);}
 
 
-footer {color: rgb(255, 255, 255);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+footer {
 justify-content: center;
 font-size: 1em;
 margin-bottom: 1em;
@@ -491,7 +472,6 @@ font-weight: 300;
 font-style: normal;
 display: flex;
 font-size: 2.3em;
-color: white;
 position: absolute;
 }
 
@@ -510,13 +490,10 @@ flex-direction: column;
 row-gap: 1em;
 justify-content: center;
 align-items: center;
-width: 100%;
 margin-bottom: 5em;
 }
 
 .cont_quienes .descr {
-width: 100%;
-color: white;
 font-size: 1em;
 position: relative;
 margin: 0;
@@ -559,8 +536,6 @@ max-height: 5%;
 }
 
 .cont_bodegas .descr_bodega {
-  width: 100%;
-  color: white;
   font-size: 1em;
   position: relative;
   margin-left: 0;
@@ -582,7 +557,6 @@ max-height: 5%;
 
 .cont_gastro .descr_gastro {
   width: 100%;
-  color: white;
   font-size: 1em;
   position: relative;
   margin: 0;
@@ -621,7 +595,6 @@ grid-template-columns: 1;
 grid-template-rows: 4;
 max-width: 100%;
 border: 0.1em;
-border-style: ridge;
 row-gap: .5em;
 padding-bottom: .1em;
 margin-bottom: 2.5em;
@@ -638,6 +611,5 @@ h4 {text-align: center; grid-row: 1;}
 
 
 }
-
 
 
