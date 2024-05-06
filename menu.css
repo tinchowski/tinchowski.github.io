@@ -2,18 +2,6 @@
     margin: 1em auto;
 }
 
-
-/*media query*/
-@media screen and (min-width: 52em) {
-    body {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    .menu {
-        max-width: 52em;
-    }
-}  /*fin mediaquery*/
-
 div.sticky {
     position: -webkit-sticky;
     position: sticky;

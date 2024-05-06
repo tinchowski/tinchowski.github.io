@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Hoja de estilo principal -->
     <link rel="stylesheet" href="Estilo.css">
-    <link rel="stylesheet" href="slides.css">
+    <link rel="stylesheet" href="menu.css">
+    
+    <!-- Carga Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
+
+
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Campo Mendoza</title>
 </head>
+
 <body>
     <div class="sticky">
             <!-- Barra de navegación -->
@@ -63,17 +62,11 @@
         </div>
         <div class="cont_quienes">
             <div class="campo-slideshow">
-                <div class="image_x">
-                    <img src="img\images (2).jpg" alt="Mountain Top">
-                </div>
-            
-                <div class="image_x">
-                    <img src="img\images (1).jpg" alt="Palm Trees">
-                </div>
-            
-                <div class="image_x">
-                    <img src="img\images.jpg" alt="Neon Sign">
-                </div>
+                <img class="image_x" src="img\images (2).jpg" alt="Mountain Top">         
+                <img class="image_x" src="img\images (1).jpg" alt="Palm Trees">      
+                <img class="image_x" src="img\images.jpg" alt="Neon Sign">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs_x(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs_x(1)">&#10095;</button>
             </div>
         
             <div class="descr">
@@ -93,12 +86,10 @@
         </div>
         <div class="cont_bodegas">
             <div class="bodega-slideshow">
-                <div class="image_y">
-                    <img src="img\las-mas-destacadas-bodegas-en-el-valle-de-uco_162_202102111802480.png" alt="">
-                </div>
-                <div class="image_y">
-                    <img src="img\bodega-grupomotiva.jpg" alt="">
-                </div>
+                <img class="image_y" src="img\las-mas-destacadas-bodegas-en-el-valle-de-uco_162_202102111802480.png" alt="">
+                <img class="image_y" src="img\bodega-grupomotiva.jpg" alt="">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs_y(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs_y(1)">&#10095;</button>
             </div>
             <div class="descr_bodega">
                 <p>A una temperatura minuciosamente determinada y dentro de nuestras barricas de maderas de roble autóctono reposan nuestros varietales. 
@@ -115,15 +106,11 @@
         </div>
         <div class="cont_gastro">
             <div class="gastro-slideshow">
-                <div class="image_z">
-                    <img src="img\gastro_1.jpg" alt="">
-                </div>
-                <div class="image_z">
-                    <img src="img\gastro_2.webp" alt="">
-                </div>
-                <div class="image_z">
-                    <img src="img\gastro_3.jpg" alt="">
-                </div>
+                    <img class="image_z" src="img\gastro_1.jpg" alt="">
+                    <img class="image_z" src="img\gastro_2.webp" alt="">
+                    <img class="image_z" src="img\gastro_3.jpg" alt="">
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs_z(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs_z(1)">&#10095;</button>
             </div>
             <div class="descr_gastro">
                 <p>Abierto en diciembre de 2023, nuestro nuevo Restaurante incluye comidas elaboradas por renombrados cocineros,
