@@ -104,14 +104,6 @@ footer {color: rgb(255, 255, 255);
 }
 
 
-.idioma {position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: rgba(255, 255, 255, 0.3); /* Color de fondo semi-transparente */
-    width: 100%;
-    padding: 0.1em;
-    text-align: center;
-}
 
 /* nombre bodega */
 .nombre_bodega {position: relative;
@@ -291,7 +283,7 @@ color: white;
     }
   
 
-  
+/*IMPORTANTE */  
     img {
       width: 100%;
      }
@@ -372,11 +364,22 @@ color: white;
 }
 
 
+
+
+
+
+
+
+
 /* MOBILE */
-@media all and (max-width: 576px) {
+@media all and (min-width: 380px) and (max-width: 576px) {
   
 
-p {font-size: 1em;}
+.laestancia img {width: 150%;}
+
+
+p {font-size: 1em;
+text-align: justify;}
 
 .menu {
 margin: 1em auto;
@@ -384,8 +387,6 @@ margin: 1em auto;
 
 
 div.sticky {
-position: -webkit-sticky;
-position: sticky;
 top: 0;
 font-size: 1em;
 justify-content: center;
@@ -399,7 +400,7 @@ padding: 0;
 display: flex;
 list-style-type: none;
 padding: 0;
-justify-content: center; /* Alinea los elementos en el centro horizontal */
+justify-content: center;
 padding: 0.5em;
 margin: 0;
 font-size: large;
@@ -430,8 +431,9 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 position: relative;
--ms-transform: translateY(+100%);
-transform: translateY(+100%);}
+-ms-transform: translateY(+120%);
+transform: translateY(+120%);}
+
 
 .titulo_bodegas #uv_l {
 float:left;
@@ -448,14 +450,6 @@ max-height: 5%;
 }
 
 
-.titulo_gastro {display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);}
-
 
 footer {
 justify-content: center;
@@ -467,9 +461,6 @@ text-align: center;
 
 /* nombre bodega */
 .nombre_bodega {position: relative;
-font-family: "Freehand", cursive;
-font-weight: 300;
-font-style: normal;
 display: flex;
 font-size: 2.3em;
 position: absolute;
@@ -487,16 +478,17 @@ position: relative;
 .cont_quienes {
 display: flex;
 flex-direction: column;
-row-gap: 1em;
+row-gap: .1em;
 justify-content: center;
 align-items: center;
-margin-bottom: 5em;
+margin-bottom: 7em;
 }
 
 .cont_quienes .descr {
-font-size: 1em;
-position: relative;
-margin: 0;
+  width: 80%;
+  font-size: 1em;
+  position: relative;
+  margin: 0;
 }
 
 .cont_quienes .campo-slideshow {
@@ -528,18 +520,17 @@ max-height: 5%;
 .cont_bodegas {
   display: flex;
   flex-direction: column;
+  row-gap: .1em;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 5em;
-  
+  margin-bottom: 7em;
 }
 
 .cont_bodegas .descr_bodega {
+  width: 80%;
   font-size: 1em;
   position: relative;
-  margin-left: 0;
-  
+  margin: 0;
 }
 
 
@@ -549,14 +540,14 @@ max-height: 5%;
 .cont_gastro {
   display: flex;
   flex-direction: column;
+  row-gap: .1em;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 
 .cont_gastro .descr_gastro {
-  width: 100%;
+  width: 80%;
   font-size: 1em;
   position: relative;
   margin: 0;
@@ -567,13 +558,11 @@ max-height: 5%;
 
 
 .titulo_gastro {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-position: relative;
--ms-transform: translateY(+100%);
-transform: translateY(+100%);}
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;}
 
 .titulo_gastro #uv_l {
     float:left;
@@ -613,3 +602,252 @@ h4 {text-align: center; grid-row: 1;}
 }
 
 
+
+
+
+
+
+
+
+
+/* TABLET */
+@media all and (min-width: 600px) and (max-width: 840px) {
+  
+
+  p {font-size: 1em;
+    text-align: justify;}
+  
+  .menu {
+  margin: 1em auto;
+  }
+  
+  
+  div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 1em;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  .menu-nav ol {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center; 
+  padding: 0.5em;
+  margin: 0;
+  font-size: large;
+  }
+  
+  
+  .laestancia {
+  display: flex;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  h1,h3 {font-size: 1em;
+  }
+  
+  h2 {font-size: 1.5em;
+  text-align: center;
+  }
+  
+  h4 {font-size: 1.7em;
+  text-align: center;}
+  
+  
+  .titulo_bodegas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -ms-transform: translateY(+100%);
+  transform: translateY(+100%);}
+  
+  .titulo_bodegas #uv_l {
+  float:left;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  .titulo_bodegas #uv_r {
+  float: right;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  
+  .titulo_gastro {display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);}
+  
+  
+  footer {
+  justify-content: center;
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  }
+  
+  
+  /* nombre bodega */
+  .nombre_bodega {position: relative;
+  display: flex;
+  font-size: 2.3em;
+  position: absolute;
+  }
+  
+  
+  .titulo_quienes {display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+  
+  
+  .cont_quienes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+  }
+  
+  .cont_quienes .descr {
+    width: 80%;
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+  }
+  
+  .cont_quienes .campo-slideshow {
+  max-width: 100%; margin-left: 0;
+  }
+  
+  .titulo_quienes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  }
+  
+  .titulo_quienes #uv_l {
+  float:left;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  .titulo_quienes #uv_r {
+  float: right;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  
+  
+  .cont_bodegas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5em;
+    
+  }
+  
+  .cont_bodegas .descr_bodega {
+    width: 80%;
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+  }
+  
+  
+  .cont_bodegas .bodega-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
+  
+  
+  .cont_gastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10em;
+  }
+  
+  .cont_gastro .descr_gastro {
+    width: 80%;
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+  }
+  
+  
+  .cont_gastro .gastro-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
+  
+  
+  .titulo_gastro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -ms-transform: translateY(+100%);
+  transform: translateY(+100%);}
+  
+  .titulo_gastro #uv_l {
+      float:left;
+      position: relative;
+      max-width: 5%;
+      max-height: 5%;
+      }
+      
+  .titulo_gastro #uv_r {
+  float: right;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  
+  .cont_contacto {display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 4;
+  max-width: 100%;
+  border: 0.1em;
+  row-gap: .5em;
+  padding-bottom: .1em;
+  margin-bottom: 2.5em;
+  }
+  
+  
+  h4 {text-align: center; grid-column: span 3; grid-row: 1;}
+  
+  .sub_contacto {text-align: center; grid-column: span 3;grid-row: 2;}
+  
+  .cont_contacto .form_contacto {grid-row: 3; grid-column: span 3; margin-left: 1em;}
+  .cont_contacto .mapa {grid-row: 4; display: block; grid-column: span 3; justify-self: center;}
+  .form_contacto {position: relative; left: 5%;}
+  
+  
+  }
+  
+  
+  
