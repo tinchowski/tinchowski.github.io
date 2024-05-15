@@ -1,12 +1,7 @@
-.textos {
-    display: flex;
-    margin: 2em 4em 2em 4em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-style: ridge;
-    justify-content: center;
-    text-align: center;
+* {
+  box-sizing: border-box;
 }
+
 
 .laestancia {
     display: flex;
@@ -37,6 +32,8 @@ h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 .cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
 .cont_contacto .mapa {grid-column: 2; grid-row: 3;}
 .form_contacto {position: relative; left: 5%;}
+
+#plan-select {margin-left: 1em;}
 
 
 body {background-color: rgb(29, 29, 29)}
@@ -109,14 +106,6 @@ footer {color: rgb(255, 255, 255);
 }
 
 
-.idioma {position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: rgba(255, 255, 255, 0.3); /* Color de fondo semi-transparente */
-    width: 100%;
-    padding: 0.1em;
-    text-align: center;
-}
 
 /* nombre bodega */
 .nombre_bodega {position: relative;
@@ -170,14 +159,6 @@ a:hover {
 color: white;
 }
 
-
-
-
-* {
-    box-sizing: border-box;
-  }
-  
-  
   .cont_quienes {
     display: flex;
     flex-wrap: wrap;
@@ -226,9 +207,7 @@ color: white;
       max-height: 5%;
   }
   
-  
-  
-  
+
   .cont_bodegas {
     display: flex;
     flex-wrap: wrap;
@@ -304,299 +283,572 @@ color: white;
         max-height: 5%;
     }
   
+
+/*IMPORTANTE */  
+    img {
+      width: 100%;
+     }
+
+    
   
-  
-  
-  img {
-    width: 100%;
-   }
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 4s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .2}
-    to {opacity: 1}
-  }
-  
-  
-  
+/* SACADO DE W3 SCHOOLS */
+/*IMPORTANTE */
+.w3-btn,.w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.w3-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+.w3-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%,-50%);
+  -ms-transform: translate(-0%,-50%)
+}
+
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%,-50%);
+  -ms-transform: translate(0%,-50%)
+}
+
+.w3-display-container:hover .w3-display-hover {
+  display: block
+}
+
+.w3-display-container:hover span.w3-display-hover {
+  display: inline-block
+}
+
+.w3-display-hover {
+  display: none
+}
+
+.w3-display-position {
+  position: absolute
+}
+
+
+.w3-button:hover {
+  color: #000!important;
+  background-color: #ccc!important
+}
+
+.w3-transparent,.w3-hover-none:hover {
+  background-color: transparent!important
+}
+
+.w3-hover-none:hover {
+  box-shadow: none!important
+}
+
+
+.w3-black,.w3-hover-black:hover {
+  color: #fff!important;
+  background-color: #000!important
+}
+
+
+
+
+
+
+
 
 
 /* MOBILE */
+@media all and (min-width: 380px) and (max-width: 576px) {
+  
 
-@media all and (max-width: 576px) {
-
-    * {
-    box-sizing: border-box;
-    }
-
-    p {font-size: 1em;
-        color: rgb(255, 255, 255);
-        font-family: 'DM Sans';
-    }
-
-    .menu {
-    margin: 1em auto;
-    }
+.laestancia img {width: 150%;}
 
 
-    div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    font-size: 1em;
-    justify-content: center;
-    width: 100%;
-    z-index: 99;
-    margin: 0;
-    padding: 0;
-    }
+p {font-size: 1em;
+text-align: justify;}
+
+.menu {
+margin: 1em auto;
+}
 
 
-    .menu-nav ol {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    justify-content: center; /* Alinea los elementos en el centro horizontal */
-    padding: 0.5em;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: large;
-    }
-
-    .menu-nav ol li {
-    margin-right: 20px; /* Ajusta el espacio entre los elementos si es necesario */
-    }
-
-    .menu-nav ol li a {
-    text-decoration: none;
-    }
+div.sticky {
+top: 0;
+font-size: 1em;
+justify-content: center;
+width: 100%;
+margin: 0;
+padding: 0;
+}
 
 
-    .laestancia {
-    display: flex;
-    position:relative;
-    justify-content: center;
-    align-items: center;
-    }
-
-    h1,h3 {font-size: 1em;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: bisque;
-    }
-
-    h2 {font-size: 1.5em;
-    text-align: center;
-    font-family: "Playfair Display", cursive;
-    color: bisque;
-    letter-spacing: 0.10em;
-    }
-
-    h4 {font-size: 1.7em;
-    text-align: center;
-    font-family: "Playfair Display", cursive;
-    color: bisque;}
+.menu-nav ol {
+display: flex;
+list-style-type: none;
+padding: 0;
+justify-content: center;
+padding: 0.5em;
+margin: 0;
+font-size: large;
+}
 
 
-    .titulo_bodegas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    -ms-transform: translateY(+100%);
-    transform: translateY(+100%);}
+.laestancia {
+display: flex;
+position:relative;
+justify-content: center;
+align-items: center;
+}
 
-    .titulo_bodegas #uv_l {
+h1,h3 {font-size: 1em;
+}
+
+h2 {font-size: 1.5em;
+text-align: center;
+}
+
+h4 {font-size: 1.7em;
+text-align: center;}
+
+
+.titulo_bodegas {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+position: relative;
+-ms-transform: translateY(+120%);
+transform: translateY(+120%);}
+
+
+.titulo_bodegas #uv_l {
+float:left;
+position: relative;
+max-width: 5%;
+max-height: 5%;
+}
+
+.titulo_bodegas #uv_r {
+float: right;
+position: relative;
+max-width: 5%;
+max-height: 5%;
+}
+
+
+
+footer {
+justify-content: center;
+font-size: 1em;
+margin-bottom: 1em;
+text-align: center;
+}
+
+
+/* nombre bodega */
+.nombre_bodega {position: relative;
+display: flex;
+font-size: 2.3em;
+position: absolute;
+}
+
+
+.titulo_quienes {display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+
+.cont_quienes {
+display: flex;
+flex-direction: column;
+row-gap: .1em;
+justify-content: center;
+align-items: center;
+margin-bottom: 7em;
+}
+
+.cont_quienes .descr {
+  width: 80%;
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+}
+
+.cont_quienes .campo-slideshow {
+max-width: 100%; margin-left: 0;
+}
+
+.titulo_quienes {
+display: flex;
+flex-direction: row;
+position: relative;
+}
+
+.titulo_quienes #uv_l {
+float:left;
+position: relative;
+max-width: 5%;
+max-height: 5%;
+}
+
+.titulo_quienes #uv_r {
+float: right;
+position: relative;
+max-width: 5%;
+max-height: 5%;
+}
+
+
+
+.cont_bodegas {
+  display: flex;
+  flex-direction: column;
+  row-gap: .1em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7em;
+}
+
+.cont_bodegas .descr_bodega {
+  width: 80%;
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+}
+
+
+.cont_bodegas .bodega-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
+
+
+.cont_gastro {
+  display: flex;
+  flex-direction: column;
+  row-gap: .1em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7em;
+}
+
+.cont_gastro .descr_gastro {
+  width: 80%;
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+}
+
+
+.cont_gastro .gastro-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
+
+
+.titulo_gastro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;}
+
+.titulo_gastro #uv_l {
     float:left;
     position: relative;
     max-width: 5%;
     max-height: 5%;
     }
-
-    .titulo_bodegas #uv_r {
-    float: right;
-    position: relative;
-    max-width: 5%;
-    max-height: 5%;
-    }
-
-
-    .titulo_gastro {display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        -ms-transform: translateY(0%);
-        transform: translateY(0%);}
+    
+.titulo_gastro #uv_r {
+float: right;
+position: relative;
+max-width: 5%;
+max-height: 5%;
+}
 
 
-    footer {color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
+.cont_contacto {display: grid;
+grid-template-columns: 1;
+grid-template-rows: 4;
+max-width: 100%;
+border: 0.1em;
+row-gap: .5em;
+padding-bottom: .1em;
+margin-bottom: 2.5em;
+}
+
+
+h4 {text-align: center; grid-row: 1;}
+
+.sub_contacto {text-align: center; grid-row: 2;}
+
+.cont_contacto .form_contacto {grid-row: 3;}
+.cont_contacto .mapa {grid-row: 4;display: none;}
+.form_contacto {position: relative; left: 5%;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* TABLET */
+@media all and (min-width: 600px) and (max-width: 840px) {
+  
+
+  p {font-size: 1em;
+    text-align: justify;}
+  
+  .menu {
+  margin: 1em auto;
+  }
+  
+  
+  div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 1em;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  .menu-nav ol {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center; 
+  padding: 0.5em;
+  margin: 0;
+  font-size: large;
+  }
+  
+  
+  .laestancia {
+  display: flex;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  h1,h3 {font-size: 1em;
+  }
+  
+  h2 {font-size: 1.5em;
+  text-align: center;
+  }
+  
+  h4 {font-size: 1.7em;
+  text-align: center;}
+  
+  
+  .titulo_bodegas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -ms-transform: translateY(+100%);
+  transform: translateY(+100%);}
+  
+  .titulo_bodegas #uv_l {
+  float:left;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  .titulo_bodegas #uv_r {
+  float: right;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  
+  .titulo_gastro {display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);}
+  
+  
+  footer {
+  justify-content: center;
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  }
+  
+  
+  /* nombre bodega */
+  .nombre_bodega {position: relative;
+  display: flex;
+  font-size: 2.3em;
+  position: absolute;
+  }
+  
+  
+  .titulo_quienes {display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+  
+  
+  .cont_quienes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+  }
+  
+  .cont_quienes .descr {
+    width: 80%;
     font-size: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    }
-
-
-    /* nombre bodega */
-    .nombre_bodega {position: relative;
-    font-family: "Freehand", cursive;
-    font-weight: 300;
-    font-style: normal;
-    display: flex;
-    font-size: 2.3em;
-    color: white;
-    position: absolute;
-    }
-
-
-    .titulo_quienes {display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    }
-
-
-    .cont_quienes {
+    margin: 0;
+  }
+  
+  .cont_quienes .campo-slideshow {
+  max-width: 100%; margin-left: 0;
+  }
+  
+  .titulo_quienes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  }
+  
+  .titulo_quienes #uv_l {
+  float:left;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  .titulo_quienes #uv_r {
+  float: right;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  
+  
+  .cont_bodegas {
     display: flex;
     flex-direction: column;
-    row-gap: 1em;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 5em;
-    }
-
-    .cont_quienes .descr {
-    width: 100%;
-    color: white;
+    
+  }
+  
+  .cont_bodegas .descr_bodega {
+    width: 80%;
     font-size: 1em;
     position: relative;
     margin: 0;
-    }
-
-    .cont_quienes .campo-slideshow {
-    max-width: 100%; margin: 0;
-    }
-
-    .titulo_quienes {
+  }
+  
+  
+  .cont_bodegas .bodega-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
+  
+  
+  .cont_gastro {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    }
-
-    .titulo_quienes #uv_l {
-    float:left;
-    position: relative;
-    max-width: 5%;
-    max-height: 5%;
-    }
-
-    .titulo_quienes #uv_r {
-    float: right;
-    position: relative;
-    max-width: 5%;
-    max-height: 5%;
-    }
-
-
-
-    .cont_bodegas {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 5em;
-      
-    }
-
-    .cont_bodegas .descr_bodega {
-      width: 100%;
-      color: white;
-      font-size: 1em;
-      position: relative;
-      margin-left: 0;
-      
-    }
-
-
-    .cont_bodegas .bodega-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
-
-
-    .cont_gastro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 10em;
-    }
-
-    .cont_gastro .descr_gastro {
-      width: 100%;
-      color: white;
-      font-size: 1em;
-      position: relative;
-      margin: 0;
-    }
-
-
-    .cont_gastro .gastro-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
-
-
-    .titulo_gastro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10em;
+  }
+  
+  .cont_gastro .descr_gastro {
+    width: 80%;
+    font-size: 1em;
     position: relative;
-    -ms-transform: translateY(+100%);
-    transform: translateY(+100%);}
-
-    .titulo_gastro #uv_l {
-        float:left;
-        position: relative;
-        max-width: 5%;
-        max-height: 5%;
-        }
-        
-    .titulo_gastro #uv_r {
-    float: right;
-    position: relative;
-    max-width: 5%;
-    max-height: 5%;
-    }
-
-
-
-    .cont_contacto {display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 4;
-    max-width: 100%;
-    border: 0.1em;
-    border-style: ridge;
-    row-gap: .5em;
-    padding-bottom: .1em;
-    margin-bottom: 2.5em;
-    }
-
-
-
-    h4 {text-align: center; grid-row: 1;}
-
-    .sub_contacto {text-align: center; grid-row: 2;}
-
-    .cont_contacto .form_contacto {grid-row: 3;}
-    .cont_contacto .mapa {grid-row: 4;display: none;}
-    .form_contacto {position: relative; left: 5%;}
-
-
-}
+    margin: 0;
+  }
+  
+  
+  .cont_gastro .gastro-slideshow {max-width: 100%; margin-left: 0; margin-bottom: 5em;}
+  
+  
+  .titulo_gastro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -ms-transform: translateY(+100%);
+  transform: translateY(+100%);}
+  
+  .titulo_gastro #uv_l {
+      float:left;
+      position: relative;
+      max-width: 5%;
+      max-height: 5%;
+      }
+      
+  .titulo_gastro #uv_r {
+  float: right;
+  position: relative;
+  max-width: 5%;
+  max-height: 5%;
+  }
+  
+  
+  .cont_contacto {display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 4;
+  max-width: 100%;
+  border: 0.1em;
+  row-gap: .5em;
+  padding-bottom: .1em;
+  margin-bottom: 2.5em;
+  }
+  
+  
+  h4 {text-align: center; grid-column: span 3; grid-row: 1;}
+  
+  .sub_contacto {text-align: center; grid-column: span 3;grid-row: 2;}
+  
+  .cont_contacto .form_contacto {grid-row: 3; grid-column: span 3; margin-left: 1em;}
+  .cont_contacto .mapa {grid-row: 4; display: block; grid-column: span 3; justify-self: center;}
+  .form_contacto {position: relative; left: 5%;}
+  
+  
+  }
+  
+  
+  
