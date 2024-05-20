@@ -228,6 +228,10 @@ color: white;
     -ms-transform: translateY(+30%);
     transform: translateY(30%);*/
     max-width: 900px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 2rem;
+    position: relative;
+    margin-top: -10rem;
   }
   .cont_quienes .descr p {
      color: bisque;
@@ -429,7 +433,20 @@ color: white;
   background-color: #000!important
 }
 
-
+/*Animaciones en scroll en secciones con Javascript*/
+#bodegas.section-animation {
+  background-color: transparent;
+  transition: all 0.5s;
+  
+}
+#bodegas.section-animation.active {
+  background-color: #da7620;
+  transform: scale(0.8);
+  z-index: 3;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  color: black;
+}
 
 
 
@@ -665,6 +682,22 @@ h4 {text-align: center; grid-row: 1;}
 .cont_contacto .mapa {grid-row: 4;display: none;}
 .form_contacto {position: relative; left: 5%;}*/
 
+  /*Animaciones en scroll en secciones con Javascript*/
+#bodegas.section-animation {
+  background-color: transparent;
+  transition: all 0.5s;
+  
+}
+#bodegas.section-animation.active {
+  background-color: #da7620;
+  transform: scale(1);
+  z-index: 3;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+
 
 }
 
@@ -722,7 +755,7 @@ h4 {text-align: center; grid-row: 1;}
   h1,h3 {font-size: 1em;
   }
   
-  h2 {font-size: 1.5em;
+  h2 {font-size: 2em;
   text-align: center;
   }
   
@@ -913,6 +946,23 @@ h4 {text-align: center; grid-row: 1;}
   .cont_contacto .mapa {grid-row: 4; display: block; grid-column: span 3; justify-self: center;}
   .form_contacto {position: relative; left: 5%;}*/
   
+
+  /*Animaciones en scroll en secciones con Javascript*/
+#bodegas.section-animation {
+  background-color: transparent;
+  transition: all 0.5s;
+  
+}
+#bodegas.section-animation.active {
+  background-color: #da7620;
+  transform: scale(1);
+  z-index: 3;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+
   
   }
   
