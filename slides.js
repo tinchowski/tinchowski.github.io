@@ -1,12 +1,3 @@
-// control de cantidad de invitados
-cant_personas.oninput = function () {
-  if (this.value.length > 2) {
-      this.value = this.value.slice(0,2);
-      alert('El máximo de personas es 10.')
-  }
-}
-
-
 var slideIndex_x = 1;
 showDivs_x(slideIndex_x);
 

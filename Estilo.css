@@ -1,6 +1,15 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
 * {
   box-sizing: border-box;
 }
+
+
 
 
 .laestancia {
@@ -8,20 +17,22 @@
     position:relative;
     justify-content: center;
     align-items: center;
+    padding-top: 78px;
 }
 
 
-.cont_contacto {display: grid;
+.cont_contacto {
+    /*display: grid;
     grid-template-columns: 1fr 1fr; 
     max-width: 65%;
     border: 0.1em;
     border-style: ridge;
     margin: 0 auto;
-    row-gap: 1em;
+    row-gap: 1em;*/
     /*height: 50vh;*/
-    column-gap: 0.5em;
+    /*column-gap: 0.5em;
     padding-bottom: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 5em;*/
 }
 
 
@@ -29,18 +40,32 @@ h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 
 .sub_contacto {text-align: center; grid-row: 2; grid-column: span 2;}
 
-.cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
-.cont_contacto .mapa {grid-column: 2; grid-row: 3;}
-.form_contacto {position: relative; left: 5%;}
+/*.cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
+.cont_contacto .mapa {grid-column: 2; grid-row: 3;}*/
+/*.form_contacto {position: relative; left: 5%;}*/
+
+/*#plan-select {margin-left: 1em;}*/
 
 
 body {background-color: rgb(29, 29, 29)}
 
-p {font-size: 1em;
-    text-align: center;
+p {font-size: 1.5em;
+    /*text-align: center;*/
     color: rgb(255, 255, 255);
     font-family: 'DM Sans';
+    font-weight: 200;
+    letter-spacing: 0.5px;
 }
+
+
+p a {font-size: 1em;
+  /*text-align: center;*/
+  color: rgb(255, 255, 255);
+  font-family: 'DM Sans';
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
 
 h1,h3 {font-size: 1.5em;
     text-align: center;
@@ -61,14 +86,15 @@ h4 {font-size: 2.3em;
 }
 
 
+
 .titulo_bodegas {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /*position: relative;
     -ms-transform: translateY(+100%);
-    transform: translateY(+100%);
+    transform: translateY(+100%);*/
 }
 
 .titulo_bodegas #uv_l {
@@ -86,13 +112,13 @@ h4 {font-size: 2.3em;
 }
 
 
-.titulo_quienes {position: relative;
+/*.titulo_quienes {position: relative;
     -ms-transform: translateY(+150%);
-    transform: translateY(+150%);}
+    transform: translateY(+150%);}*/
 
 .titulo_gastro {position: relative;
-    -ms-transform: translateY(+150%);
-    transform: translateY(+150%);
+    /*-ms-transform: translateY(+150%);
+    transform: translateY(+150%);*/
 }
 
 
@@ -123,20 +149,72 @@ label{
     font-size: 1em;
     color: bisque;
     font-family:'DM Sans';
-    margin: 1em;
+    /*margin: 1em;*/
     text-align: left;
     justify-content: center;
 }
 
-#Boton {color: black}
-
-input {display:block;
-    font-size: 1em;
-    color: black;
-    margin: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
+#Boton {color: bisque;}
+#Boton:hover {
+  color: black;
 }
+
+
+input {
+    display:block;
+    font-size: 1em;
+    color: bisque;
+    /*margin: 1em;*/
+    font-family:'DM Sans', sans-serif;
+    justify-content: center;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border:  1px solid bisque;
+}
+input:hover , input:focus {
+  border:  2px solid bisque;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: bisque;
+  background-color: bisque;
+  border-radius: 1rem;
+}
+input[type="file"] {
+  display: none;
+}
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: rgb(238,211,60);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.file-label:hover {
+  background-color: rgb(238, 211, 60);
+}
+
+select {
+  display:block;
+  font-size: 1em;
+  color: bisque;
+  /*margin: 1em;*/
+  font-family:'DM Sans', sans-serif;
+  justify-content: center;
+  background-color: transparent;
+  border:  1px solid bisque;
+}
+
+select option {
+  background-color: black;
+}
+
+
 
 
 a {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -144,7 +222,10 @@ a {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* creo animaciones */
-input[type=submit]:hover {background-color: rgb(238, 211, 60);}
+input[type=submit]:hover {
+  background-color: rgb(238, 211, 60);
+  color: black;
+}
 
 /* estilos links */
 a:link {
@@ -157,39 +238,52 @@ a:hover {
 color: white;
 }
 
+.contacto_container {
+  background-color: rgba(255,255,255,0.06);
+}
+.mapa {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
   .cont_quienes {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10em;
+    margin-bottom: 10em;*/
   }
   
   .cont_quienes .descr {
-    width: 50%;
+   /* width: 50%;
     color: white;
     margin-left: 2.5em;
     font-size: 1em;
     position: relative;
     -ms-transform: translateY(+30%);
-    transform: translateY(30%);
+    transform: translateY(30%);*/
+    max-width: 900px;
   }
+  .cont_quienes .descr p {
+     color: bisque;
+   }
   
   
   .cont_quienes .campo-slideshow {
-    width: 70vh;
+    /*width: 70vh;
     max-height: 80vh;   
-    margin-left: 9em; 
+    margin-left: 9em; */
     position: relative;
-    -ms-transform: translateY(+35%);
-    transform: translateY(+35%);}
-  
+    /*-ms-transform: translateY(+35%);
+    transform: translateY(+35%);*/}
+    .campo-slideshow  {
+      /*flex: 1 1 auto;*/
+    }
     .titulo_quienes {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      position: relative;
+      /*position: relative;
       -ms-transform: translateY(+100%);
-      transform: translateY(+100%);}
+      transform: translateY(+100%);*/}
   
   .titulo_quienes #uv_l {
           float:left;
@@ -206,57 +300,58 @@ color: white;
   }
   
 
-  
   .cont_bodegas {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15em;
+    margin-bottom: 15em;*/
   }
   
   .cont_bodegas .descr_bodega {
-    width: 50%;
     color: white;
-    margin-left: 2.5em;
     font-size: 1em;
+    /*width: 50%;
+    margin-left: 2.5em;
     position: relative;
     -ms-transform: translateY(+50%);
-    transform: translateY(50%);
+    transform: translateY(50%);*/
   }
   
   
   .cont_bodegas .bodega-slideshow {
-    width: 70vh;
+    position: relative;
+   /* width: 70vh;
     max-height: 80vh;   
     margin-left: 9em; 
-    position: relative;
     -ms-transform: translateY(+50%);
-    transform: translateY(+50%);}
+    transform: translateY(+50%);*/
+  }
   
   
     .cont_gastro {
-      display: flex;
+      /*display: flex;
       flex-wrap: wrap;
-      margin-bottom: 15em;
+      margin-bottom: 15em;*/
     }
     
     .cont_gastro .descr_gastro {
-      width: 50%;
       color: white;
-      margin-left: 2.5em;
       font-size: 1em;
+      /*width: 50%;
+      margin-left: 2.5em;
       position: relative;
       -ms-transform: translateY(+50%);
-      transform: translateY(+50%);
+      transform: translateY(+50%);*/
     }
     
     
     .cont_gastro .gastro-slideshow {
-      width: 70vh;
+      position: relative;
+      /*width: 70vh;
       max-height: 80vh;   
       margin-left: 9em; 
-      position: relative;
+      
       -ms-transform: translateY(+50%);
-      transform: translateY(+50%);}
+      transform: translateY(+50%);*/}
   
   
       .titulo_gastro {
@@ -264,9 +359,9 @@ color: white;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        position: relative;
+        /*position: relative;
         -ms-transform: translateY(+100%);
-        transform: translateY(+100%);}
+        transform: translateY(+100%);*/}
     
     .titulo_gastro #uv_l {
             float:left;
@@ -284,6 +379,9 @@ color: white;
   
 
 /*IMPORTANTE */  
+    .slideshow-style img {
+      border-radius: 1rem;
+    }
     img {
       width: 100%;
      }
@@ -372,14 +470,15 @@ color: white;
 
 
 /* MOBILE */
-@media all and (min-width: 380px) and (max-width: 576px) {
+@media all and (max-width: 599px) {
   
 
 .laestancia img {width: 150%;}
 
 
 p {font-size: 1em;
-text-align: justify;}
+text-align: initial;
+}
 
 .menu {
 margin: 1em auto;
@@ -431,8 +530,8 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 position: relative;
--ms-transform: translateY(+120%);
-transform: translateY(+120%);}
+/*-ms-transform: translateY(+120%);
+transform: translateY(+120%);*/}
 
 
 .titulo_bodegas #uv_l {
@@ -579,7 +678,7 @@ max-height: 5%;
 }
 
 
-.cont_contacto {display: grid;
+/*.cont_contacto {display: grid;
 grid-template-columns: 1;
 grid-template-rows: 4;
 max-width: 100%;
@@ -587,16 +686,16 @@ border: 0.1em;
 row-gap: .5em;
 padding-bottom: .1em;
 margin-bottom: 2.5em;
-}
+}*/
 
 
 h4 {text-align: center; grid-row: 1;}
 
 .sub_contacto {text-align: center; grid-row: 2;}
 
-.cont_contacto .form_contacto {grid-row: 3;}
+/*.cont_contacto .form_contacto {grid-row: 3;}
 .cont_contacto .mapa {grid-row: 4;display: none;}
-.form_contacto {position: relative; left: 5%;}
+.form_contacto {position: relative; left: 5%;}*/
 
 
 }
@@ -615,7 +714,7 @@ h4 {text-align: center; grid-row: 1;}
   
 
   p {font-size: 1em;
-    text-align: justify;}
+    /*text-align: justify;*/}
   
   .menu {
   margin: 1em auto;
@@ -669,8 +768,8 @@ h4 {text-align: center; grid-row: 1;}
   align-items: center;
   justify-content: center;
   position: relative;
-  -ms-transform: translateY(+100%);
-  transform: translateY(+100%);}
+  /*-ms-transform: translateY(+100%);
+  transform: translateY(+100%);*/}
   
   .titulo_bodegas #uv_l {
   float:left;
@@ -692,8 +791,8 @@ h4 {text-align: center; grid-row: 1;}
       align-items: center;
       justify-content: center;
       position: relative;
-      -ms-transform: translateY(0%);
-      transform: translateY(0%);}
+     /* -ms-transform: translateY(0%);
+      transform: translateY(0%);*/}
   
   
   footer {
@@ -809,8 +908,8 @@ h4 {text-align: center; grid-row: 1;}
   align-items: center;
   justify-content: center;
   position: relative;
-  -ms-transform: translateY(+100%);
-  transform: translateY(+100%);}
+  /*-ms-transform: translateY(+100%);
+  transform: translateY(+100%);*/}
   
   .titulo_gastro #uv_l {
       float:left;
@@ -827,7 +926,7 @@ h4 {text-align: center; grid-row: 1;}
   }
   
   
-  .cont_contacto {display: grid;
+  /*.cont_contacto {display: grid;
   grid-template-columns: 3;
   grid-template-rows: 4;
   max-width: 100%;
@@ -835,19 +934,23 @@ h4 {text-align: center; grid-row: 1;}
   row-gap: .5em;
   padding-bottom: .1em;
   margin-bottom: 2.5em;
-  }
+  }*/
   
   
   h4 {text-align: center; grid-column: span 3; grid-row: 1;}
   
-  .sub_contacto {text-align: center; grid-column: span 3;grid-row: 2;}
+  /*.sub_contacto {text-align: center; grid-column: span 3;grid-row: 2;}*/
   
-  .cont_contacto .form_contacto {grid-row: 3; grid-column: span 3; margin-left: 1em;}
+  /*.cont_contacto .form_contacto {grid-row: 3; grid-column: span 3; margin-left: 1em;}
   .cont_contacto .mapa {grid-row: 4; display: block; grid-column: span 3; justify-self: center;}
-  .form_contacto {position: relative; left: 5%;}
+  .form_contacto {position: relative; left: 5%;}*/
   
   
   }
   
-  
+@media screen and (max-width: 680px ){
+  .form_contacto {
+    flex: 1 1 auto;
+  }
+}
   
