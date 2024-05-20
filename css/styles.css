@@ -914,6 +914,11 @@
   width: 100%;
 }
 
+.w-70 {
+  width: 70%;
+}
+
+
 .flex-wrap {
   flex-wrap: wrap;
 }

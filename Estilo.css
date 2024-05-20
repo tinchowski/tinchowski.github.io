@@ -10,8 +10,6 @@ html, body {
 }
 
 
-
-
 .laestancia {
     display: flex;
     position:relative;
@@ -21,30 +19,10 @@ html, body {
 }
 
 
-.cont_contacto {
-    /*display: grid;
-    grid-template-columns: 1fr 1fr; 
-    max-width: 65%;
-    border: 0.1em;
-    border-style: ridge;
-    margin: 0 auto;
-    row-gap: 1em;*/
-    /*height: 50vh;*/
-    /*column-gap: 0.5em;
-    padding-bottom: 1em;
-    margin-bottom: 5em;*/
-}
-
 
 h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 
-.sub_contacto {text-align: center; grid-row: 2; grid-column: span 2;}
-
-/*.cont_contacto .form_contacto {grid-column: 1; grid-row: 3;}
-.cont_contacto .mapa {grid-column: 2; grid-row: 3;}*/
-/*.form_contacto {position: relative; left: 5%;}*/
-
-/*#plan-select {margin-left: 1em;}*/
+.sub_contacto {text-align: center; grid-row: 2; grid-column: span 2;color: bisque}
 
 
 body {background-color: rgb(29, 29, 29)}
@@ -92,9 +70,6 @@ h4 {font-size: 2.3em;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /*position: relative;
-    -ms-transform: translateY(+100%);
-    transform: translateY(+100%);*/
 }
 
 .titulo_bodegas #uv_l {
@@ -188,7 +163,7 @@ input[type="file"] {
   padding: 10px 20px;
   font-size: 16px;
   color: black;
-  background-color: rgb(238,211,60);
+  background-color: goldenrod;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -213,8 +188,6 @@ select {
 select option {
   background-color: black;
 }
-
-
 
 
 a {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -245,37 +218,32 @@ color: white;
   flex: 1 1 auto;
   overflow: hidden;
 }
-  .cont_quienes {
-    /*display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10em;*/
-  }
+
   
   .cont_quienes .descr {
-   /* width: 50%;
-    color: white;
-    margin-left: 2.5em;
-    font-size: 1em;
-    position: relative;
-    -ms-transform: translateY(+30%);
-    transform: translateY(30%);*/
     max-width: 900px;
   }
-  .cont_quienes .descr p {
+  .cont_bodegas .descr_bodega p {
      color: bisque;
+     font-size: 1.3em;
    }
+
+   .cont_quienes .descr p {
+    color: bisque;
+    font-size: 1em;
+  }
+
+  .cont_gastro .descr_gastro p {
+    color: bisque;
+    font-size: 1.3em;
+  }
   
   
   .cont_quienes .campo-slideshow {
-    /*width: 70vh;
-    max-height: 80vh;   
-    margin-left: 9em; */
+
     position: relative;
-    /*-ms-transform: translateY(+35%);
-    transform: translateY(+35%);*/}
-    .campo-slideshow  {
-      /*flex: 1 1 auto;*/
-    }
+}
+
     .titulo_quienes {
       display: flex;
       flex-direction: row;
@@ -300,11 +268,6 @@ color: white;
   }
   
 
-  .cont_bodegas {
-    /*display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15em;*/
-  }
   
   .cont_bodegas .descr_bodega {
     color: white;
@@ -319,49 +282,27 @@ color: white;
   
   .cont_bodegas .bodega-slideshow {
     position: relative;
-   /* width: 70vh;
-    max-height: 80vh;   
-    margin-left: 9em; 
-    -ms-transform: translateY(+50%);
-    transform: translateY(+50%);*/
   }
   
   
-    .cont_gastro {
-      /*display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 15em;*/
-    }
+
     
     .cont_gastro .descr_gastro {
       color: white;
       font-size: 1em;
-      /*width: 50%;
-      margin-left: 2.5em;
-      position: relative;
-      -ms-transform: translateY(+50%);
-      transform: translateY(+50%);*/
     }
     
     
     .cont_gastro .gastro-slideshow {
       position: relative;
-      /*width: 70vh;
-      max-height: 80vh;   
-      margin-left: 9em; 
-      
-      -ms-transform: translateY(+50%);
-      transform: translateY(+50%);*/}
+}
   
   
       .titulo_gastro {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        /*position: relative;
-        -ms-transform: translateY(+100%);
-        transform: translateY(+100%);*/}
+        justify-content: center;}
     
     .titulo_gastro #uv_l {
             float:left;
@@ -387,7 +328,6 @@ color: white;
      }
 
     
-  
 /* SACADO DE W3 SCHOOLS */
 /*IMPORTANTE */
 .w3-btn,.w3-button {
