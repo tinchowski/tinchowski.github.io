@@ -170,6 +170,11 @@ input[type="file"] {
   text-align: center;
 }
 
+.uploadkit-invalid .uploadkit-button {
+  background-color: #3333CC !important; 
+}
+
+
 .file-label:hover {
   background-color: rgb(238, 211, 60);
 }
@@ -283,7 +288,6 @@ color: white;
   .cont_bodegas .bodega-slideshow {
     position: relative;
   }
-  
   
 
     

@@ -86,12 +86,23 @@ function ValidateEmail(inputText){
     }
 
 
-    function fecha_hoy(){
-        const date = new Date();
+function fecha_hoy(){
+    const date = new Date();
 
-        let dia = date.getDate();
-        let mes = date.getMonth() + 1;
-        let anio = date.getFullYear();
-        
-        let currentDate = Date.parse(`${anio}-${mes}-${dia}`);
-        return currentDate;}
+    let dia = date.getDate();
+    let mes = date.getMonth() + 1;
+    let anio = date.getFullYear();
+    
+    let currentDate = Date.parse(`${anio}-${mes}-${dia}`);
+    return currentDate;}
+
+
+function cambia_label(){
+    var texto_boton = document.querySelector("#contacto > div > div > div.form_contacto > form > label.file-label");
+    var archivo_sel = document.querySelector("#photo").files;
+    if (archivo_sel.length == 1){
+        texto_boton.textContent = "Foto seleccionada.";
+    }
+}
+
+document.querySelector("#photo").addEventListener('change',cambia_label)
