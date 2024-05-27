@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .cont_quienes {
   display: flex;
   flex-wrap: wrap;
@@ -50,8 +49,6 @@
     max-width: 5%;
     max-height: 5%;
 }
-
-
 
 
 .cont_bodegas {
@@ -128,9 +125,6 @@
       max-width: 5%;
       max-height: 5%;
   }
-
-
-
 
 img {
   width: 100%;

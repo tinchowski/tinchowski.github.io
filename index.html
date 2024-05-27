@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="Estilo.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- Carga Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <!-- <body onload='document.form.email.focus()'></body> -->
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,7 +40,6 @@
         </nav>
     </div>
 
-
     <div class="laestancia">
         <img src="img\provincia-mendoza-jumbotron.jpg" class="imagen-recortada" alt="la estancia" width=100% height=10%>
         <div class="nombre_bodega">Bodegas Campo Mendoza</div>
@@ -56,14 +54,14 @@
         </div>
         <div class="cont_quienes d-flex gap-2 a-items-center">
             <div class="campo-slideshow w-100 slideshow-style">
-                <img class="image_x" src="img\images (2).jpg" alt="mesa exterior">         
-                <img class="image_x" src="img\images (1).jpg" alt="campo">      
+                <img class="image_x" src="img\images (2).jpg" alt="mesa exterior">
+                <img class="image_x" src="img\images (1).jpg" alt="campo">
                 <img class="image_x" src="img\images.jpg" alt="mesa al fondo">
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs_x(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs_x(1)">&#10095;</button>
             </div>
-        
-            <div class="descr w-100 d-flex gap-1 flex-column p-s-3 p-e-3">
+
+            <div class="descr w-100 ">
                 <p>En Campo Mendoza disfrutamos cada etapa del proceso de la elaboración de vino. La experiencia vinitícola de nuestra finca se extiende hasta los doscientos años de antigüedad, con la primera llegada de inmigrantes españoles a suelo mendocino. Aquí, los verdes viñedos se funden con el paisaje desértico y montañoso de Los Andes.</p>
                 <p>Ahora abrimos nuestras puertas al público, compartiendo nuestra pasión y dedicación, ofreciendo degustaciones de nuestros vinos, acompañados de platos elaborados de alta cocina.</p>
                 <p>Nuestro compromiso y deseo es que usted sienta al visitar nuestros viñedos una experiencia igual de placentera, un atisbo de lo que nosotros sentimos con nuestra tradición.</p>
@@ -85,8 +83,8 @@
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs_y(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs_y(1)">&#10095;</button>
             </div>
-            <div class="descr_bodega w-100">
-                <p>A una temperatura minuciosamente determinada y dentro de nuestras barricas de maderas de roble autóctono reposan nuestros varietales. 
+            <div class="descr w-100">
+                <p>A una temperatura minuciosamente determinada y dentro de nuestras barricas de maderas de roble autóctono reposan nuestros varietales.
                     Allí además es donde se obtienen las notas caracteristicas de nuestros vinos. </p>
             </div>
         </div>
@@ -106,7 +104,7 @@
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs_z(-1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs_z(1)">&#10095;</button>
             </div>
-            <div class="descr_gastro w-100">
+            <div class="descr w-100">
                 <p>Abierto en diciembre de 2023, nuestro nuevo Restaurante incluye comidas elaboradas por renombrados cocineros,
                     utilizando ingredientes y elementos de la región cuyana.
                 </p>
@@ -117,7 +115,7 @@
     <section id="contacto" class="p-t-3 p-s-1 p-e-1 p-b-1 m-t-2">
         <div class="cont_contacto d-flex flex-column gap-2 a-items-center">
             <h4 class="m-0">VEN A CONOCERNOS</h4>
-            <p class="sub_contacto m-0">Visitas guiadas. Aperitivos y catas de vino incluídas.</p> 
+            <p class="sub_contacto m-0">Visitas guiadas. Aperitivos y catas de vino incluídas.</p>
             <div class="d-flex flex-row gap-2 flex-wrap w-70 p-2 contacto_container b-r-2 m-0">
                 <div class="form_contacto">
                     <form name="form1" action="" method="POST" target="" class="d-flex flex-column gap-0-5">
@@ -129,7 +127,7 @@
                         <input type="number" name="cant_personas" id="cant_personas" max="10" min="1" class="p-0-5 b-r-2 input-style">
                         <label for="plan-select">Elija plan de visita:</label>
                         <!-- selector: -->
-                        <select name="plan" id="plan-select" class="input-style p-1 b-r-2 m-0">
+                        <select name="plan" id="plan-select" class="input-style p-0-5 b-r-2 input-style">
                             <option value="rec">Recorrida</option>
                             <option value="rec_almuerzo">Recorrida y almuerzo</option>
                             <option value="almuerzo">Solo almuerzo</option>
@@ -140,18 +138,14 @@
                         <input size="30" type="email" name="email_input" id="email" class="p-0-5 b-r-2 input-style">
                         <label for="photo">Foto DNI:</label>
                         <label for="photo" class="file-label">Seleccionar Archivo</label>
-                        <input type="file" id="photo" name="photo" class="p-1 b-r-2" accept="image/*" required>
-                        <!-- <input type='text' name='email_input'/> -->
+                        <input type="file" id="photo" name="photo" class="p-1 b-r-2 input-style" accept="image/*" required>
                         <div class="d-flex flex-row gap-0-5 a-items-center">
                             <input type="checkbox" name="news" id="news" class="p-0-5 b-r-2 input-style">
                             <label for="news">Quiero suscribirme al newsletter</label>
-                        
                         </div>
-                        
                         <input type="submit" id="Boton" value="Enviar" onclick="ValidateEmail(document.querySelector('#email').value)" class="b-r-2 p-1 input-style">
-                        <!-- <input type="submit" id="Boton" value="Enviar" onclick="valida_campos()"> -->
                     </form>
-    
+
                 </div>
                 <div class="mapa b-r-1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53609.022228484464!2d-68.89971900652304!3d-32.88325636537007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1712342173535!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa-style" width="100%" height="100%"></iframe>
