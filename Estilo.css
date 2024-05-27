@@ -630,7 +630,12 @@ h4 {text-align: center; grid-row: 1;}
 }
 
 
-
+#mensaje p {
+  font-size: 1em;
+    color: bisque;
+    font-family: 'DM Sans';
+    text-align: center;
+}
 
 /* TABLET */
 @media all and (min-width: 600px) and (max-width: 1020px) {

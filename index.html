@@ -143,8 +143,11 @@
                             <input type="checkbox" name="news" id="news" class="p-0-5 b-r-2 input-style">
                             <label for="news">Quiero suscribirme al newsletter</label>
                         </div>
-                        <input type="submit" id="Boton" value="Enviar" onclick="ValidateEmail(document.querySelector('#email').value)" class="b-r-2 p-1 input-style">
+                        <input type="submit" id="Boton" value="Enviar" onclick="ValidateEmail(event, document.querySelector('#email').value)" class="b-r-2 p-1 input-style">
                     </form>
+                    <div id="mensaje" class="p-0-5 d-flex flex-column">
+                        <p></p>
+                    </div>
 
                 </div>
                 <div class="mapa b-r-1">
