@@ -69,14 +69,14 @@ h4 {font-size: 2.3em;
     justify-content: center;
 }
 
-.titulo_bodegas #uv_l {
+.titulo_bodegas .uv_l {
     float:left;
     position: relative;
     max-width: 5%;
     max-height: 5%;
     }
 
-.titulo_bodegas #uv_r {
+.titulo_bodegas .uv_r {
     float: right;
     position: relative;
     max-width: 5%;
@@ -239,14 +239,14 @@ color: white;
       align-items: center;
       justify-content: center;}
 
-  .titulo_quienes #uv_l {
+  .titulo_quienes .uv_l {
           float:left;
           position: relative;
           max-width: 5%;
           max-height: 5%;
         }
 
-  .titulo_quienes #uv_r {
+  .titulo_quienes .uv_r {
       float: right;
       position: relative;
       max-width: 5%;
@@ -283,14 +283,14 @@ color: white;
         align-items: center;
         justify-content: center;}
 
-    .titulo_gastro #uv_l {
+    .titulo_gastro .uv_l {
             float:left;
             position: relative;
             max-width: 5%;
             max-height: 5%;
           }
 
-    .titulo_gastro #uv_r {
+    .titulo_gastro .uv_r {
         float: right;
         position: relative;
         max-width: 5%;
@@ -457,14 +457,14 @@ position: relative;
 }
 
 
-.titulo_bodegas #uv_l {
+.titulo_bodegas .uv_l {
 float:left;
 position: relative;
 max-width: 5%;
 max-height: 5%;
 }
 
-.titulo_bodegas #uv_r {
+.titulo_bodegas .uv_r {
 float: right;
 position: relative;
 max-width: 5%;
@@ -525,14 +525,14 @@ flex-direction: row;
 position: relative;
 }
 
-.titulo_quienes #uv_l {
+.titulo_quienes .uv_l {
 float:left;
 position: relative;
 max-width: 5%;
 max-height: 5%;
 }
 
-.titulo_quienes #uv_r {
+.titulo_quienes .uv_r {
 float: right;
 position: relative;
 max-width: 5%;
@@ -596,14 +596,14 @@ max-height: 5%;
   justify-content: center;
   position: relative;}
 
-.titulo_gastro #uv_l {
+.titulo_gastro .uv_l {
     float:left;
     position: relative;
     max-width: 5%;
     max-height: 5%;
     }
 
-.titulo_gastro #uv_r {
+.titulo_gastro .uv_r {
 float: right;
 position: relative;
 max-width: 5%;
@@ -702,14 +702,14 @@ h4 {text-align: center; grid-row: 1;}
   justify-content: center;
   position: relative;}
 
-  .titulo_bodegas #uv_l {
+  .titulo_bodegas .uv_l {
   float:left;
   position: relative;
   max-width: 5%;
   max-height: 5%;
   }
 
-  .titulo_bodegas #uv_r {
+  .titulo_bodegas .uv_r {
   float: right;
   position: relative;
   max-width: 5%;
@@ -772,14 +772,14 @@ h4 {text-align: center; grid-row: 1;}
   position: relative;
   }
 
-  .titulo_quienes #uv_l {
+  .titulo_quienes .uv_l {
   float:left;
   position: relative;
   max-width: 5%;
   max-height: 5%;
   }
 
-  .titulo_quienes #uv_r {
+  .titulo_quienes .uv_r {
   float: right;
   position: relative;
   max-width: 5%;
@@ -838,14 +838,14 @@ h4 {text-align: center; grid-row: 1;}
   justify-content: center;
   position: relative;}
 
-  .titulo_gastro #uv_l {
+  .titulo_gastro .uv_l {
       float:left;
       position: relative;
       max-width: 5%;
       max-height: 5%;
       }
 
-  .titulo_gastro #uv_r {
+  .titulo_gastro .uv_r {
   float: right;
   position: relative;
   max-width: 5%;
