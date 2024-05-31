@@ -18,6 +18,15 @@ html, body {
     align-items: center;
     padding-top: 78px;
 }
+.laestancia img {
+    width:100%;
+    object-fit:cover;
+}
+.mapa iframe {
+    width:100%;
+    height:100%;
+}
+
 
 h4 {text-align: center; grid-row: 1; grid-column: span 2;}
 
