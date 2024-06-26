@@ -20,7 +20,7 @@ addEventListener('submit',(event)=>{
             return
     }
 
-    if( cant_personas <= 0 && cant_personas > 10 ) {
+    if( cant_personas <= 0 || cant_personas > 10 ) {
         message.textContent="Cantidad de personas entre 1 y 10."
         return
     }
